@@ -1,0 +1,135 @@
+/*************************************** ESTILOS GENERALES *********************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fonts{
+    color: rgb(34, 33, 33);
+    font-family: 'Quicksand';
+}
+/************************************ ESTILOS PARA LA CABECERA *****************************************/
+.header{
+    width: 100%;
+    height: 15vh;
+    display: flex;  
+    justify-content: start;
+    align-items: center;
+}
+.header__title{
+    color: rgb(34, 33, 33);
+    font-family: 'Quicksand';
+    margin-left: 1rem;
+}
+/******************************* ESTILOS PARA EL CONTENEDOR PRINCIPAL *******************************/
+.main{
+    width: 100%;
+    height: 75vh;
+    display: inline-flex;
+}
+.main .main__left{
+    width: 50%;
+    height: 100%;
+}
+.main .main__left .left__img{
+    width: 90%;
+}
+.main .main__right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+.main .main__right .right__title{
+    font-size: 2.6rem;
+    text-align: center;
+}
+.main .main__right .right__text{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.main .main__right .right__btn{
+    background-color: rgb(34, 33, 33);
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    border: none;
+    border-radius: .2rem;
+    padding: 1rem;
+}
+.main .main__right .right__btn:hover{
+    cursor: pointer;
+}
+/************************************** ESTILOS PARA EL FOOTER *************************************/
+.footer{
+    width: 100%;
+    height: 10vh;
+}
+.footer .footer__title{
+    color: rgb(26, 24, 24);
+    font-family: 'Quicksand';
+    font-weight: 100;
+}
+/************************************** MEDIA QUERIES *********************************************/
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .header__title{
+        margin-left: 1rem;
+        font-size: 3rem;
+    }
+    .main .main__left .left__img{
+        width: 80%;
+    }
+    .main .main__right .right__title{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .main .main__right .right__text{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .main .main__right .right__btn{
+        font-size: 1.5rem;
+    }
+    .footer .footer__title{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 2000px){
+    .header__title{
+        margin-left: 1rem;
+        font-size: 3rem;
+    }
+    .main .main__left{
+        width: 40%;
+    }
+    .main .main__left .left__img{
+        width: 70%;
+    }
+    .main .main__right{
+        width: 60%;
+    } 
+    .main .main__right .right__title{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .main .main__right .right__text{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .main .main__right .right__btn{
+        font-size: 1.5rem;
+    }
+    .footer .footer__title{
+        font-size: 2rem;
+    }
+}
